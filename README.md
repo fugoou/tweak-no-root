@@ -21,7 +21,6 @@ setprop debug.MB.inner.running 24; setprop debug.MB.running 72; setprop debug.ap
 ```bash
 dumpsys deviceidle force-idle; settings put global device_idle_constants inactive_to=15000,sensing_to=0,locating_to=0,location_accuracy=20.0,motion_inactive_to=0,idle_after_inactive_to=0,idle_pending_to=60000,max_idle_pending_to=120000,idle_pending_factor=2.0,idle_to=900000,max_idle_to=86400000,idle_factor=2.0,min_time_to_alarm=600000,max_temp_app_whitelist_duration=10000,mms_temp_app_whitelist_duration=10000,sms_temp_app_whitelist_duration=10000; settings put system peak_refresh_rate R.integer.config_defaultPeakRefreshRate; settings put system min_refresh_rate 60.4; settings put secure refresh_rate_mode 2; settings put global zen_mode 0; settings put global sem_enchanced_cpu_responsiveness 1; settings put global restricted_device_performance 0,0; settings put global cached_apps_freezer 1; settings put secure multi_press_timeout 250; settings put global enhanced_processing 1; /system/bin/device_config put activity_manager max_phantom_processes 2147483647; settings put global fstrim_mandatory_interval 86400000; settings put global enable_gpu_debug_layers 1; settings put global gpu_debug_layers VK_LAYER_KHRONOS_validation
 ```
-
 ```bash
 settings put global gpu_debug_app <package_name>
 ```
@@ -36,7 +35,9 @@ settings put global gpu_debug_app com.instagram.android,com.whatsapp
 
 * more information? Look [`here`](https://developer.arm.com/documentation/101545/0508/Before-you-begin/Android/Preparing-to-capture-non-debuggable-applications) & [`here`](https://forum.xda-developers.com/t/forcedoze-via-adb-optimized-doze-settings-no-root-required-via-adb-usb-debugging.3803732/)
 
+
 ## 2. driver game 11+
+
 
 * for Android 11
 
@@ -50,6 +51,7 @@ settings put global game_driver_opt_out_apps 1
 settings put global game_driver_opt_in_apps <package_name>
 ```
 
+
 * Example :
 
 ```bash
@@ -59,7 +61,9 @@ settings put global game_driver_opt_in_apps com.archosaur.sea.dr.gp,com.nexon.bl
 settings put global game_driver_opt_in_apps com.archosaur.sea.dr.gp
 ```
 
+
 * for Android 12 & 13 ( maybe )
+
 
 ```bash
 settings put global updatable_driver_all_apps 1
@@ -71,7 +75,9 @@ settings put global updatable_driver_production_opt_out_apps 1
 settings put global updatable_driver_production_opt_in_apps <package_name>
 ```
 
+
 * Example :
+
 
 ```bash
 settings put global updatable_driver_production_opt_in_apps com.archosaur.sea.dr.gp
@@ -80,7 +86,9 @@ settings put global updatable_driver_production_opt_in_apps com.archosaur.sea.dr
 settings put global updatable_driver_production_opt_in_apps com.archosaur.sea.dr.gp,com.nexon.bluearchive
 ```
 
+
 ## 2. zRam ( not recommended & not all phones can )
+
 
 ```bash
 settings put global ram_expand_size 1
@@ -92,12 +100,15 @@ settings put global ram_expand_size_list 0,1,2,4,6,8,12,16
 
 ## 3. change downscale and mode app
 
+
 * hard to explain you can see it [`here`](https://developer.android.com/games/gamemode/gamemode-interventions)
 
 
 ## 4. Android Dynamic Performance Framework
 
+
 * Fixed performance mode :
+
 
 ```bash
 cmd power set-fixed-performance-mode-enabled true
@@ -108,17 +119,21 @@ cmd power set-fixed-performance-mode-enabled true
 
 ## 5. change pixel phone ( not recommended )
 
+
 [`click this to download the app`](https://play.google.com/store/apps/details?id=com.tribalfs.pixels)
 
+
 * code how to open it ?
+
 
 ```bash
 pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS
 ```
-
 * how to use ?
 
+
 click custom button > just change "width" to "1080" / "720" / "540" / "480" / "360" / "240" / "144"
+
 
 * recommended width is "540"
 
