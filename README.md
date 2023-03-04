@@ -144,42 +144,9 @@ click custom button > just change "width" to "1080" / "720" / "540" / "480" / "3
 
 ok here is a list of ideal resolutions for games
 
-1)
-Width: 2160 Height: 4560
-Ratio: 0.474
-9.85 megapixels (9849600 pixels)
-
-2)
-Width: 1728 Height: 3648
-Ratio: 0.474
-6.3 megapixels (6303744 pixels)
-
-3) 
-Width: 1440 Height: 3040
-Ratio: 0.474
-4.38 megapixels (4377600 pixels)
-
-4)
-Width: 1152 Height: 2432
-Ratio: 0.474
-2.8 megapixels (2801664 pixels)
-
-5)
-Width: 1080 Height: 2280
-Ratio: 0.474
-2.46 megapixels (2462400 pixels)
-
-6)
-Width: 864 Height: 1824
-Ratio: 0.474
-1.58 megapixels (1575936 pixels)
-
-7)
-Width: 720 Height: 1520
-Ratio: 0.474
-1.09 megapixels (1094400 pixels)
-
-and more huh, you can check in [`Resolution Scale Calculator`](https://bneijt.nl/pr/resolution-scale-calculator/)
+<p align="center">
+	<img src="https://raw.githubusercontent.com/fugoou/tweak-no-root/main/Screenshot_20230304-191848.jpg">
+</p>
 
 for example, my phone has native resolution Width 720 x Height 1600, so to change it to the ideal game resolution we have to find the same Witdh as our phone
 
