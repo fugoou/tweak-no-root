@@ -4,6 +4,8 @@
 	<img src="https://s4.bukalapak.com/img/4846047083/large/hp_kentang.jpg" width="35%" style="margin-left: auto;margin-right: auto;display: block;">
 </p>
 
+how to access ADB ? [`HERE!`](https://developer.android.com/studio/command-line/adb?hl=id)
+
 all in adb command ( according to each Android and each terminal ) just copy & paste
 
 ## 1. ( random ) maybe there are some fake strings and values ​​because I also fetched some strings and values ​​on YouTube lol ( it is not recommended to reboot because the string will be lost when rebooting )
@@ -24,16 +26,15 @@ dumpsys deviceidle force-idle; settings put global device_idle_constants inactiv
 settings put global gpu_debug_app <package_name>
 ```
 
-* Example 1
+* Example :
 ```bash
 settings put global gpu_debug_app com.instagram.android
 ```
-* Example 2
-``bash 
+```bash 
 settings put global gpu_debug_app com.instagram.android,com.whatsapp
 ```
 
-* note : more information? Look [`here`](https://developer.arm.com/documentation/101545/0508/Before-you-begin/Android/Preparing-to-capture-non-debuggable-applications) & [`here`](https://forum.xda-developers.com/t/forcedoze-via-adb-optimized-doze-settings-no-root-required-via-adb-usb-debugging.3803732/)
+* more information? Look [`here`](https://developer.arm.com/documentation/101545/0508/Before-you-begin/Android/Preparing-to-capture-non-debuggable-applications) & [`here`](https://forum.xda-developers.com/t/forcedoze-via-adb-optimized-doze-settings-no-root-required-via-adb-usb-debugging.3803732/)
 
 ## 2. driver game 11+
 
@@ -49,7 +50,7 @@ settings put global game_driver_opt_out_apps 1
 settings put global game_driver_opt_in_apps <package_name>
 ```
 
-example :
+* Example :
 
 ```bash
 settings put global game_driver_opt_in_apps com.archosaur.sea.dr.gp,com.nexon.bluearchive
@@ -70,7 +71,7 @@ settings put global updatable_driver_production_opt_out_apps 1
 settings put global updatable_driver_production_opt_in_apps <package_name>
 ```
 
-example :
+* Example :
 
 ```bash
 settings put global updatable_driver_production_opt_in_apps com.archosaur.sea.dr.gp
@@ -102,70 +103,63 @@ settings put global ram_expand_size_list 0,1,2,4,6,8,12,16
 cmd power set-fixed-performance-mode-enabled true
 ```
 
-more information ? look [`this`](https://developer.android.com/games/optimize/adpf?hl=id)
+* more information ? look [`this`](https://developer.android.com/games/optimize/adpf?hl=id)
 
 
-## 5 change pixel phone ( not recommended )
+## 5. change pixel phone ( not recommended )
 
 [`click this to download the app`](https://play.google.com/store/apps/details?id=com.tribalfs.pixels)
 
-code how to open it ?
+* code how to open it ?
 
 ```bash
 pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS
 ```
 
-how to use ?
+* how to use ?
 
 click custom button > just change "width" to "1080" / "720" / "540" / "480" / "360" / "240" / "144"
 
-recommended width is "540"
+* recommended width is "540"
 
 
-## 6 change size dpi + resolution ( not recommended to combine with tutor number 5 )
+## 6. change size dpi + resolution ( not recommended to combine with tutor number 5 )
 
 "people say that the ideal resolution for games is 1080x2280"
 
 ok here is a list of ideal resolutions for games
 
 1)
-
 Width: 2160 Height: 4560
 Ratio: 0.474
 9.85 megapixels (9849600 pixels)
 
 2)
-
 Width: 1728 Height: 3648
 Ratio: 0.474
 6.3 megapixels (6303744 pixels)
 
 3) 
-
 Width: 1440 Height: 3040
 Ratio: 0.474
 4.38 megapixels (4377600 pixels)
 
 4)
-
 Width: 1152 Height: 2432
 Ratio: 0.474
 2.8 megapixels (2801664 pixels)
 
 5)
-
 Width: 1080 Height: 2280
 Ratio: 0.474
 2.46 megapixels (2462400 pixels)
 
 6)
-
 Width: 864 Height: 1824
 Ratio: 0.474
 1.58 megapixels (1575936 pixels)
 
 7)
-
 Width: 720 Height: 1520
 Ratio: 0.474
 1.09 megapixels (1094400 pixels)
@@ -174,7 +168,7 @@ and more huh, you can check in [`Resolution Scale Calculator`](https://bneijt.nl
 
 for example, my phone has native resolution Width 720 x Height 1600, so to change it to the ideal game resolution we have to find the same Witdh as our phone
 
-example :
+* Example :
 
 ```bash
 wm size 720x1520
@@ -186,7 +180,7 @@ wm density 390 ( default but not recommended, this is adjusted to your convenien
 
 ## 8. Qboost app
 
-download : [`qboost`](http://m.qt6.com/XiaZai/99175.html)
+* download : [`qboost`](http://m.qt6.com/XiaZai/99175.html)
 
 recommended ?
 
