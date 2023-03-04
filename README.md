@@ -169,3 +169,42 @@ wm density 390
 recommended ?
 
 set all to max power 🥴
+
+
+## 9. Debloat
+
+uninstall
+
+```bash
+
+pm uninstall -k --user 0 <package_name>
+
+```
+
+reinstall
+
+```bash
+
+cmd package install-existing <package_name>
+
+```
+
+* Example :
+
+uninstall
+
+```bash
+
+pm uninstall -k --user 0 com.android.chrome
+
+```
+
+reinstall
+
+```bash
+
+cmd package install-existing com.android.chrome
+
+```
+
+* note : remove useless system apps
