@@ -11,6 +11,7 @@ all in adb command ( according to each Android and each terminal ) just copy & p
 ## 1. Setprop
 
 Definition: Debugging is the process of detecting and removing of existing and potential errors (also called as 'bugs') in a software code that can cause it to behave unexpectedly or crash.
+
 note: ( random ) maybe there are some fake strings and values because I also fetched some strings and values on YouTube lol ( it is not recommended to reboot because the string will be lost when rebooting )
 
 ```bash
