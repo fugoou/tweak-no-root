@@ -22,7 +22,7 @@ setprop debug.surface_flinger.enable_frame_rate_override 120.0; setprop debug.su
 ## 2. A little tweak system/secure/global
 
 ```bash
-dumpsys deviceidle force-idle; settings put global device_idle_constants inactive_to=15000,sensing_to=0,locating_to=0,location_accuracy=20.0,motion_inactive_to=0,idle_after_inactive_to=0,idle_pending_to=60000,max_idle_pending_to=120000,idle_pending_factor=2.0,idle_to=900000,max_idle_to=86400000,idle_factor=2.0,min_time_to_alarm=600000,max_temp_app_whitelist_duration=10000,mms_temp_app_whitelist_duration=10000,sms_temp_app_whitelist_duration=10000; settings put system peak_refresh_rate R.integer.config_defaultPeakRefreshRate; settings put system min_refresh_rate 64.0; settings put secure refresh_rate_mode 2; settings put global zen_mode 0; settings put global sem_enchanced_cpu_responsiveness 1; settings put global enhanced_processing 1; settings put global restricted_device_performance 0,0; settings put global app_standby_enabled 1; settings put global GPUTUNER_SWITCH true; settings put global fps_divisor 120.000000; settings put secure ui_night_mode 1; settings put global volte_vt_enabled 1; settings put system adaptive_fast_charging 1; settings put global fancy_ime_animations 1; settings put global download_manager_max_bytes_over_mobile 21390950; settings put system mcf_continuity 0; settings put global cached_apps_freezer 1; settings put system multicore_packet_scheduler 1; settings put system hdr_effect 1; settings put global set_sync_disabled_for_tests persistent; cmd device_config put activity_manager max_phantom_processes 2147483647; settings put global activity_manager_constants max_cached_processes=192; cmd device_config put activity_manager max_cached_processes 160; cmd device_config put activity_manager max_empty_time_millis 43200000; cmd settings put global settings_enable_monitor_phantom_procs false; settings put secure multi_press_timeout 250; settings put global enhanced_processing 1; settings put secure tap_duration_threshold 0.0; settings put global transition_animation_scale 0.6; settings put secure touch_blocking_period 0.0; settings put global fstrim_mandatory_interval 86400000; settings put global enable_gpu_debug_layers 1; settings put global gpu_debug_layers VK_LAYER_KHRONOS_validation
+dumpsys deviceidle force-idle; settings put global device_idle_constants inactive_to=15000,sensing_to=0,locating_to=0,location_accuracy=20.0,motion_inactive_to=0,idle_after_inactive_to=0,idle_pending_to=60000,max_idle_pending_to=120000,idle_pending_factor=2.0,idle_to=900000,max_idle_to=86400000,idle_factor=2.0,min_time_to_alarm=600000,max_temp_app_whitelist_duration=10000,mms_temp_app_whitelist_duration=10000,sms_temp_app_whitelist_duration=10000; settings put system peak_refresh_rate R.integer.config_defaultPeakRefreshRate; settings put system min_refresh_rate 64.0; settings put secure refresh_rate_mode 2; settings put global zen_mode 0; settings put global sem_enchanced_cpu_responsiveness 1; settings put global enhanced_processing 1; settings put global restricted_device_performance 0,0; settings put global app_standby_enabled 1; settings put global GPUTUNER_SWITCH true; settings put global fps_divisor 120.000000; settings put secure ui_nisettings put global volte_vt_enabled 1; settings put system adaptive_fast_charging 1; settings put global fancy_ime_animations 1; settings put global download_manager_max_bytes_over_mobile 21390950; settings put system mcf_continuity 0; settings put global cached_apps_freezer 1; settings put system multicore_packet_scheduler 1; settings put system hdr_effect 1; settings put global set_sync_disabled_for_tests persistent; cmd device_config put activity_manager max_phantom_processes 2147483647; settings put global activity_manager_constants max_cached_processes=192; cmd device_config put activity_manager max_cached_processes 160; cmd device_config put activity_manager max_empty_time_millis 43200000; cmd settings put global settings_enable_monitor_phantom_procs false; settings put secure multi_press_timeout 250; settings put global enhanced_processing 1; settings put secure tap_duration_threshold 0.0; settings put global transition_animation_scale 0.6; settings put secure touch_blocking_period 0.0; settings put global fstrim_mandatory_interval 86400000; settings put global enable_gpu_debug_layers 1; settings put global gpu_debug_layers VK_LAYER_KHRONOS_validation
 ```
 ```bash
 settings put global gpu_debug_app <package_name>
@@ -163,18 +163,9 @@ wm density 390
 ```
 
 390 is default dpi but not recommended, this is adjusted to your convenience
- 
-
-## 8. Qboost app
-
-* download : [`qboost`](http://m.qt6.com/XiaZai/99175.html)
-
-recommended ?
-
-set all to max power 🥴
 
 
-## 9. Debloat
+## 8. Debloat
 
 uninstall
 
